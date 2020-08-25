@@ -18,6 +18,11 @@ var Colleges=require('./routes/colleges');
 app.use('/users', Users)
 app.use('/colleges',Colleges)
 
+// for implementing routes for checking routes is working of not
+app.get('/',(req,res)=>{
+  res.send('hello');
+});
+
 app.listen(port, function() {
   console.log('Server is running on port: ' + port)
 })
