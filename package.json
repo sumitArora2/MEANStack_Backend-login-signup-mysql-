@@ -4,8 +4,7 @@
   "description": "nodejs login with jwt token",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [
     "nodejs",

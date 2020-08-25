@@ -23,7 +23,7 @@ module.exports = {
         res.send('Failed to add the college');
       }
     } catch (err) {
-      response.error(res, err);
+      res.status(404).send(err);
     }
   },
   getColleges:async (req, res) => {
@@ -35,7 +35,7 @@ module.exports = {
       res.send('No college exist');
     }
     } catch (err) {
-      response.error(res, err);
+      res.status(404).error(res, err);
     }
   }
 }
